@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #000f30;
+  color: #fff;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Utilities */
+.bar-thin {
+  width: 100%;
+  height: 7px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #0c80be, #0aeef3);
+}
+
+.lex-heading {
+  font-size: 2.5rem;
+}
+
+.lex-btn {
+  padding: 1rem 2rem;
+  background-color: #02fafd;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.lex-btn:hover {
+  background-color: #2cc3c5;
+}
+
+/* Side Bar */
+#lex-side-bar {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  padding: 2rem 1rem;
+}
+
+.lex-side-bar .lex-logo {
+  margin: 2rem;
+  /* text-align: center; */
+}
+
+.lex-side-bar .lex-logo a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.lex-side-bar-menu .lex-side-bar-menu-item {
+  margin-bottom: 2rem;
+}
+
+.lex-side-bar-menu .lex-side-bar-menu-item a {
+  color: #fff;
+  padding: 5px 10px;
+  /* margin-bottom: 10rem; */
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+.lex-side-bar-menu .lex-side-bar-menu-item a:hover {
+  color: rgb(127, 127, 247);
+}
+
+/* Main */
+#lex-main {
+  padding: 2rem;
+  width: 80%;
+  position: absolute;
+  right: 0;
+}
+
+/* Showcase */
+.lex-showcase {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+
+.lex-showcase .lex-heading {
+  margin-bottom: 2rem;
+}
+
+.lex-showcase .lex-main-list {
+  font-size: 1.2rem;
+}
+
+.lex-showcase .lex-main-list li {
+  list-style: outside;
+}
+
+.lex-staking .bar-thin {
+  width: 50%;
+  margin: auto;
+}
+
+.lex-staking .lex-heading {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.lex-staking .lex-staking-container {
+  margin: 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.lex-staking .lex-staking-container img {
+  width: 50%;
+}
+
+.lex-staking .lex-staking-info {
+  margin: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.lex-working {
+  /* margin: auto; */
+}
+
+.lex-working .lex-lg-heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.lex-working .lex-working-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.lex-working .lex-working-options .lex-working-option .lex-g-container {
+  margin: 1rem;
+  padding: 1rem;
+  width: 25rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border: 4px solid;
+  border-radius: 10px;
+  border-color: #0699fd;
+  box-shadow: 0px 0px 27px 0px #0699fd;
+}
+
+.lex-working .lex-working-options .lex-working-option .lex-g-container h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.lex-working .lex-working-options .lex-working-option .lex-g-container p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.lex-working .bar-thin {
+  width: 50%;
+  margin: auto;
+}
+
+.lex-contact .lex-heading {
+  text-align: center;
+  margin: 2rem;
+}
+
+.lex-contact p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.lex-contact .bar-thin {
+  width: 50%;
+  margin: auto;
+}
+
+.lex-contact .lex-contract {
+  margin: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lex-contact .lex-social-media-links {
+  width: 70%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lex-social-media-link svg {
+  width: 5rem;
+  fill: #fff;
+}
+
+.lex-social-media-link svg:hover {
+  fill: #ddd;
+  transform: scale(1.2);
+  transition: all ease-in-out 0.1s;
+}
+
+/* Dashboard Page */
+.lex-main .nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-items: end;
+  justify-self: flex-end;
+}
+
+.lex-main .nav ul .nav-item {
+  margin: 1rem;
+}
+
+.lex-main .nav ul .balance {
+  font-size: 1.3rem;
+}
+
+.lex-main .nav ul .wallet {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: 10px;
+}
+
+.lex-main .nav ul .wallet a {
+  color: #fff;
+}
+
+.statistics {
+  width: 80%;
+  margin-top: 3rem;
+}
+
+.statistics ul {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.statistics ul li .stat-container .stat-head {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.statistics ul li .stat-container .stat {
+  padding: 0.5rem 3rem;
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.bnb-dash {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.bnb-dash h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.bnb-dash-container {
+  margin: 1rem 0;
+  border: 5px solid #2cc3c5;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.bnb-dash-container .dash-head,
+.bnb-dash-container .dash-stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bnb-dash-container .dash-head h2 {
+  font-size: 1.5rem;
+}
+
+.dash-form {
+  margin-bottom: 2rem;
+}
+
+.dash-form input[type="text"] {
+  width: 78%;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.dash-form input[type="submit"] {
+  width: 21%;
+  height: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, #0c80be, #0aeef3);
+}
