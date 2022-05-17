@@ -152,12 +152,13 @@ li {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 4rem;
+  padding: 0 8rem;
 }
 
 .lex-working .lex-working-options .lex-working-option .lex-g-container {
   margin: 1rem;
   padding: 1rem;
-  width: 25rem;
+  width: 20rem;
   height: 60vh;
   display: flex;
   flex-direction: column;
